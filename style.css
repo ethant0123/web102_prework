@@ -73,3 +73,10 @@ button {
     margin: 1%;
     border-radius: 7px;
 }
+
+.stats-container {
+    display: flex;
+    cursor: pointer;
+    box-shadow: 0 0 0px lightblue
+
+}
