@@ -22,7 +22,7 @@ Here's a walkthrough of implemented features:
 ![Click here for gif](Prework.gif)
 
 <!-- Replace this with whatever GIF tool you used! -->
-GIF created with ...  
+GIF created with LICEcap  
 <!-- Recommended tools:
 [Kap](https://getkap.co/) for macOS
 [ScreenToGif](https://www.screentogif.com/) for Windows
@@ -30,11 +30,11 @@ GIF created with ...
 
 ## Notes
 
-Describe any challenges encountered while building the app.
+It was initally hard to work with javascript because I am not very used to the syntax. As I kept working with it and doing more reasearch it became easier to understand. I especially had a problem with understanding how the ternary operator worked, but now I feel confident with being able to use it in future projects. 
 
 ## License
 
-    Copyright [yyyy] [name of copyright owner]
+    Copyright 2024 Ethan Thomas
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
