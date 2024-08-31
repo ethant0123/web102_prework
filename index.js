@@ -28,15 +28,12 @@ const gamesContainer = document.getElementById("games-container");
 // create a function that adds all data from the games array to the page
 function addGamesToPage(games) {
 
-    // Step 1: Create a for loop to iterate over each game
     for (let i = 0; i < games.length; i++) {
         const game = games[i];
 
-        // Step 2: Create a new div element and add the game-card class
         const gameCard = document.createElement('div');
         gameCard.classList.add('game-card');
 
-        // Step 3: Set the inner HTML using a template literal
         gameCard.innerHTML = `
             <img src="${game.img}" alt="${game.name}" class="game-img" />
             <h3>${game.name}</h3>
@@ -44,7 +41,6 @@ function addGamesToPage(games) {
             <p>Backers: ${game.backers}</p>
         `;
 
-        // Step 4: Append the gameCard to the games-container
         const gamesContainer = document.getElementById('games-container');
         gamesContainer.appendChild(gameCard);
     }
@@ -73,13 +69,8 @@ const totalContributions = GAMES_JSON.reduce((total, game) => {
 
 contributionsCard.textContent = totalContributions;
 
-// set the inner HTML using a template literal and toLocaleString to get a number with commas
-
-
-// grab the amount raised card, then use reduce() to find the total amount raised
 const raisedCard = document.getElementById("total-raised");
 
-// set inner HTML using template literal
 const totalRaised = GAMES_JSON.reduce((total, game) => {
     return total + game.pledged;
 }, 0);
@@ -145,11 +136,7 @@ allBtn.addEventListener('click', showAllGames);
 
 // grab the description container
 const descriptionContainer = document.getElementById("description-container");
-
-// use filter or reduce to count the number of unfunded games
 const unfundedGames = GAMES_JSON.filter(game => game.pledged < game.goal);
-
-// Get the number of unfunded games
 const UnfundedGamesTotal = unfundedGames.length;
 
 console.log(`Number of unfunded games: ${UnfundedGamesTotal}`);
